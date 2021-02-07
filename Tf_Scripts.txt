@@ -1,0 +1,17 @@
+
+root@terraform:~# cat instance.tf
+provider "aws" {
+  access_key = "AKIAJ2wUL3LMRQ5LVDA"
+  secret_key = "iUVmOoIjFfdse23Nfd5xl9pMHpXyVeOkA02N"
+  region     = "us-east-2"
+}
+resource "aws_instance" "example" {
+  ami           = "ami-0ebc8f6f580a04647"
+  instance_type = "t2.micro"
+}
+
+# terraform init
+# terraform  plan
+# terraform  apply
+# terraform  destroy
+
